@@ -48,7 +48,7 @@ button{font-family:inherit}
 .nav-toggle{display:none}
 
 .hero{position:relative;overflow:hidden;padding:clamp(3.5rem,8vw,6.25rem) 0 clamp(3rem,7vw,5rem);background:var(--cream)}
-.hero .container{display:block}
+.hero .container{display:block;position:static}
 .hero-copy{max-width:720px;position:relative;z-index:2;padding-right:40px}
 .hero-label{display:block;font-size:.82rem;letter-spacing:.19em;text-transform:uppercase;font-weight:700;color:var(--espresso);margin-bottom:1rem}
 .hero-copy h1{font-size:clamp(4.7rem,10vw,8.2rem);letter-spacing:-.035em;line-height:.85;max-width:7ch}
@@ -57,9 +57,10 @@ button{font-family:inherit}
 .hero-support{font-size:clamp(1rem,1.8vw,1.25rem);line-height:1.45;max-width:610px;margin:.65rem 0 0}
 .hero-actions{display:flex;gap:16px;flex-wrap:wrap;margin-top:1.8rem}
 .hero-actions .btn:first-child{background:var(--rust);color:#fff}
-.hero-visual{position:absolute;inset:0 0 0 auto;width:104px;pointer-events:none;z-index:1;background:var(--rust);clip-path:polygon(100% 0,100% 100%,25% 100%,25% 95%,55% 90%,25% 84%,55% 78%,25% 72%,55% 66%,25% 60%,55% 54%,25% 48%,55% 42%,25% 36%,55% 30%,25% 24%,55% 18%,25% 12%,55% 6%,25% 0)}
+.hero-visual{position:absolute;top:0;right:0;bottom:0;width:72px;pointer-events:none;z-index:1;background:var(--rust);overflow:visible}
+.hero-visual::before{content:'';position:absolute;left:-32px;top:0;bottom:0;width:64px;background:radial-gradient(circle at 32px 32px,var(--cream) 0 30px,transparent 31px) 0 0/64px 64px repeat-y}
 .hero-visual svg{display:none}
-.hero::after{content:'✦';position:absolute;right:138px;bottom:64px;color:var(--gold);font-size:44px;line-height:1}
+.hero::after{content:'✦';position:absolute;right:126px;bottom:62px;color:var(--gold);font-size:44px;line-height:1;z-index:2}
 
 .stripe-band{height:48px;background:var(--espresso);display:flex;align-items:stretch;gap:0;padding:0;margin:0;max-width:none;overflow:hidden}
 .stripe-band .bar{border-radius:0;min-width:0;height:100%!important}
@@ -144,7 +145,8 @@ button{font-family:inherit}
   .hero-copy h1{font-size:clamp(4rem,16vw,6rem)}
   .hero-tagline{font-size:clamp(2rem,8vw,3rem)}
   .hero-visual{width:54px}
-  .hero::after{right:72px;bottom:38px;font-size:32px}
+  .hero-visual::before{left:-24px;width:48px;background:radial-gradient(circle at 24px 24px,var(--cream) 0 22px,transparent 23px) 0 0/48px 48px repeat-y}
+  .hero::after{right:92px;bottom:38px;font-size:32px}
   .stripe-band{height:38px}
   .throughline .container{grid-template-columns:1fr;gap:1.5rem}
   .throughline-actions{justify-content:flex-start}
@@ -167,6 +169,7 @@ button{font-family:inherit}
   .hero-copy h1{font-size:clamp(3.9rem,20vw,5rem)}
   .hero-support{font-size:1rem}
   .hero-visual{width:42px}
+  .hero-visual::before{left:-19px;width:38px;background:radial-gradient(circle at 19px 19px,var(--cream) 0 17px,transparent 18px) 0 0/38px 38px repeat-y}
   .hero::after{display:none}
   .hero-actions{gap:12px}
   .btn{padding:.75rem 1rem;box-shadow:3px 4px 0 var(--espresso)}
