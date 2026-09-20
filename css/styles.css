@@ -49,11 +49,11 @@ button{font-family:inherit}
 
 .hero{position:relative;overflow:hidden;padding:clamp(3.5rem,8vw,6.25rem) 0 clamp(3rem,7vw,5rem);background:var(--cream)}
 .hero .container{display:block;position:static}
-.hero-copy{max-width:720px;position:relative;z-index:2;padding-right:40px}
+.hero-copy{max-width:980px;position:relative;z-index:2;padding-right:40px}
 .hero-label{display:block;font-size:.82rem;letter-spacing:.19em;text-transform:uppercase;font-weight:700;color:var(--espresso);margin-bottom:1rem}
 .hero-copy h1{font-size:clamp(4.7rem,10vw,8.2rem);letter-spacing:-.035em;line-height:.85;max-width:7ch}
 .hero-copy h1 .accent{color:var(--rust)}
-.hero-tagline{font:400 clamp(2rem,4.4vw,3.7rem)/1.02 var(--font-display);font-style:italic;margin:1.55rem 0 .65rem;color:var(--espresso);max-width:12ch}
+.hero-tagline{font:400 clamp(2rem,4vw,3.5rem)/1.02 var(--font-display);font-style:italic;margin:1.55rem 0 .65rem;color:var(--espresso);max-width:19ch}
 .hero-support{font-size:clamp(1rem,1.8vw,1.25rem);line-height:1.45;max-width:610px;margin:.65rem 0 0}
 .hero-actions{display:flex;gap:16px;flex-wrap:wrap;margin-top:1.8rem}
 .hero-actions .btn:first-child{background:var(--rust);color:#fff}
