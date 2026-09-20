@@ -183,3 +183,23 @@ button{font-family:inherit}
   .about-figure{max-width:280px}
   .footer-meta{flex-direction:column;align-items:flex-start}
 }
+
+
+/* Portfolio imagery */
+.project-card-media{grid-column:2;grid-row:1 / span 3;display:flex;align-items:center;justify-content:center;min-width:0}
+.project-card-media img{display:block;width:100%;height:auto;max-height:390px;object-fit:contain}
+.project-card.capaci-card .project-card-media img{width:auto;max-width:250px;max-height:430px}
+.project-card:has(.project-card-media)::after{display:none}
+
+.about-figure{overflow:hidden;display:block}
+.about-figure img{width:100%;height:100%;object-fit:cover;display:block}
+
+.project-hero .hero-image{margin-top:2.4rem;aspect-ratio:auto;border:0;border-radius:0;background:transparent;display:flex;align-items:center;justify-content:center;color:inherit}
+.project-hero .hero-image img{display:block;width:100%;height:auto;max-height:650px;object-fit:contain}
+.project-hero .hero-image.project-phone img{width:auto;max-width:min(420px,85vw);max-height:720px}
+
+@media(max-width:860px){
+  .project-card-media{grid-column:1;grid-row:auto;margin-top:1rem}
+  .project-card-media img{max-height:360px}
+  .project-card.capaci-card .project-card-media img{max-width:220px;max-height:390px}
+}
