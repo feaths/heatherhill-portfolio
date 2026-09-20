@@ -12,10 +12,7 @@
 
   <link rel="stylesheet" href="../css/styles.css">
 </head>
-<!-- Accent color for this project page: wine -->
-<body style="--accent: var(--wine);">
-
-  <div class="stripe-band" aria-hidden="true"></div>
+<body class="bg-cream">
 
   <header class="site-header">
     <div class="container">
@@ -39,8 +36,8 @@
 
   <main>
 
-    <!-- ============ Section 1: Project Hero ============ -->
-    <section class="project-hero">
+    <!-- ============ Section 1: Project Hero (accent: wine, matches card) ============ -->
+    <section class="project-hero bg-wine">
       <div class="container">
         <span class="eyebrow">Systems Design</span>
         <h1>AI Guides + Function Maps</h1>
@@ -49,12 +46,9 @@
       </div>
     </section>
 
-    <!-- ============ Section 2: The Challenge ============ -->
-    <section class="project-section">
+    <!-- ============ Section 2: The Challenge (dark background) ============ -->
+    <section class="project-section dark section">
       <div class="container">
-        <div class="section-label">
-          <span class="section-num">01</span>
-        </div>
         <div class="section-body">
           <h2>The Challenge</h2>
           <!-- TEMPLATE: replace with the real project narrative -->
@@ -63,39 +57,32 @@
       </div>
     </section>
 
-    <!-- ============ Section 3: Approach & Strategy ============ -->
-    <section class="project-section">
+    <!-- ============ Section 3: What I Did (light background) ============ -->
+    <section class="project-section light section">
       <div class="container">
-        <div class="section-label">
-          <span class="section-num">02</span>
-        </div>
         <div class="section-body">
-          <h2>Approach</h2>
+          <h2>What I Did</h2>
           <!-- TEMPLATE: replace with the real project narrative -->
           <p class="placeholder">[Placeholder] Explain the structure behind the guides and function maps: how information was organized, what made it navigable, and how AI tooling fit in.</p>
         </div>
       </div>
     </section>
 
-    <!-- ============ Section 4: Results & Impact ============ -->
-    <section class="project-section">
+    <!-- ============ Section 4: Outcome (accent background) ============ -->
+    <section class="project-section accent bg-wine section">
       <div class="container">
-        <div class="section-label">
-          <span class="section-num">03</span>
-        </div>
         <div class="section-body">
-          <h2>What Changed</h2>
+          <h2>Outcome</h2>
           <!-- TEMPLATE: replace with the real project narrative -->
           <p class="placeholder">[Placeholder] Describe how teams found and used information differently afterward, and what time or friction was saved.</p>
         </div>
       </div>
     </section>
 
-    <!-- ============ Section 5: Navigation ============ -->
+    <!-- ============ Section 5: Navigation back to main work section ============ -->
     <nav class="project-nav" aria-label="Project navigation">
       <div class="container">
-        <a href="../index.html" class="nav-back">Back to home</a>
-        <a href="capaci.html" class="nav-next">Next project: Capaci</a>
+        <a href="../index.html#work">&larr; Back to all work</a>
       </div>
     </nav>
 
@@ -103,9 +90,13 @@
 
   <footer class="site-footer">
     <div class="container">
-      <span class="footer-brand">Heather Hill</span>
-      <a href="https://www.linkedin.com/in/hmhill/" target="_blank" rel="noopener">LinkedIn</a>
-      <div class="footer-meta">&copy; <span id="year"></span> Heather Hill. heatherhill.co</div>
+      <h2>Let's connect</h2>
+      <p class="footer-copy">If something here sounds like your problem, I'd like to hear about it. The easiest way to reach me is LinkedIn.</p>
+      <a href="https://www.linkedin.com/in/hmhill/" class="btn" target="_blank" rel="noopener">Find me on LinkedIn</a>
+      <div class="footer-meta">
+        <span>&copy; <span id="year"></span> Heather Hill. heatherhill.co</span>
+        <a href="https://www.linkedin.com/in/hmhill/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
     </div>
   </footer>
 

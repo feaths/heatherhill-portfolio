@@ -12,10 +12,7 @@
 
   <link rel="stylesheet" href="../css/styles.css">
 </head>
-<!-- Accent color for this project page: coral -->
-<body style="--accent: var(--coral);">
-
-  <div class="stripe-band" aria-hidden="true"></div>
+<body class="bg-cream">
 
   <header class="site-header">
     <div class="container">
@@ -39,8 +36,8 @@
 
   <main>
 
-    <!-- ============ Section 1: Project Hero ============ -->
-    <section class="project-hero">
+    <!-- ============ Section 1: Project Hero (accent: rust, matches card) ============ -->
+    <section class="project-hero bg-rust">
       <div class="container">
         <span class="eyebrow">Product Strategy</span>
         <h1>Hello Brain</h1>
@@ -49,12 +46,9 @@
       </div>
     </section>
 
-    <!-- ============ Section 2: The Challenge ============ -->
-    <section class="project-section">
+    <!-- ============ Section 2: The Challenge (dark background) ============ -->
+    <section class="project-section dark section">
       <div class="container">
-        <div class="section-label">
-          <span class="section-num">01</span>
-        </div>
         <div class="section-body">
           <h2>The Challenge</h2>
           <!-- TEMPLATE: replace with the real project narrative -->
@@ -63,39 +57,32 @@
       </div>
     </section>
 
-    <!-- ============ Section 3: Approach & Strategy ============ -->
-    <section class="project-section">
+    <!-- ============ Section 3: What I Did (light background) ============ -->
+    <section class="project-section light section">
       <div class="container">
-        <div class="section-label">
-          <span class="section-num">02</span>
-        </div>
         <div class="section-body">
-          <h2>Approach</h2>
+          <h2>What I Did</h2>
           <!-- TEMPLATE: replace with the real project narrative -->
           <p class="placeholder">[Placeholder] Walk through the strategic approach: key decisions, the reasoning behind them, and how the work connected product, operations, and people. Include any frameworks or processes worth naming.</p>
         </div>
       </div>
     </section>
 
-    <!-- ============ Section 4: Results & Impact ============ -->
-    <section class="project-section">
+    <!-- ============ Section 4: Outcome (accent background) ============ -->
+    <section class="project-section accent bg-rust section">
       <div class="container">
-        <div class="section-label">
-          <span class="section-num">03</span>
-        </div>
         <div class="section-body">
-          <h2>What Changed</h2>
+          <h2>Outcome</h2>
           <!-- TEMPLATE: replace with the real project narrative -->
           <p class="placeholder">[Placeholder] Summarize the outcome. What shipped, what improved, what the team or business could do afterward that it couldn't before. Numbers help if they're real.</p>
         </div>
       </div>
     </section>
 
-    <!-- ============ Section 5: Navigation ============ -->
+    <!-- ============ Section 5: Navigation back to main work section ============ -->
     <nav class="project-nav" aria-label="Project navigation">
       <div class="container">
-        <a href="../index.html" class="nav-back">Back to home</a>
-        <a href="at-your-ledger.html" class="nav-next">Next project: At Your Ledger</a>
+        <a href="../index.html#work">&larr; Back to all work</a>
       </div>
     </nav>
 
@@ -103,9 +90,13 @@
 
   <footer class="site-footer">
     <div class="container">
-      <span class="footer-brand">Heather Hill</span>
-      <a href="https://www.linkedin.com/in/hmhill/" target="_blank" rel="noopener">LinkedIn</a>
-      <div class="footer-meta">&copy; <span id="year"></span> Heather Hill. heatherhill.co</div>
+      <h2>Let's connect</h2>
+      <p class="footer-copy">If something here sounds like your problem, I'd like to hear about it. The easiest way to reach me is LinkedIn.</p>
+      <a href="https://www.linkedin.com/in/hmhill/" class="btn" target="_blank" rel="noopener">Find me on LinkedIn</a>
+      <div class="footer-meta">
+        <span>&copy; <span id="year"></span> Heather Hill. heatherhill.co</span>
+        <a href="https://www.linkedin.com/in/hmhill/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
     </div>
   </footer>
 
