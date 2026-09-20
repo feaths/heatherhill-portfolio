@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heather Hill — Digital Product &amp; Strategy</title>
+  <meta name="description" content="Digital product and strategy work that actually connects the dots. Heather Hill's portfolio.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <div class="stripe-band" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo">Heather <span>Hill</span></a>
+
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <nav class="main-nav" aria-label="Main">
+        <ul>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#about">About</a></li>
+          <!-- Contact currently points to LinkedIn; update if a contact page is added later -->
+          <li><a href="https://www.linkedin.com/in/heatherhill/" class="nav-cta" target="_blank" rel="noopener">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ Hero ============ -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-copy">
+          <h1>
+            Digital product and strategy work that actually connects the dots.
+            <span class="line-2">Strategic thinking. Practical execution. Everything connected.</span>
+          </h1>
+        </div>
+        <div class="hero-block" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- ============ Throughline ============ -->
+    <section class="throughline">
+      <div class="container">
+        <span class="kicker">The Throughline</span>
+        <p>My career taught me what digital problems really require. Twelve years across customer operations, engineering, team leadership, and product showed me that the best solutions come from understanding how all these pieces connect. I still approach every project that way.</p>
+      </div>
+    </section>
+
+    <!-- ============ Work / Project Cards ============ -->
+    <section class="work" id="work">
+      <div class="container">
+        <div class="section-head">
+          <h2>Selected Work</h2>
+          <span class="count">04 projects</span>
+        </div>
+
+        <div class="card-grid">
+          <article class="project-card">
+            <span class="tag">Product Strategy</span>
+            <div>
+              <h3>Hello Brain</h3>
+              <p>A product built to make complex thinking visible, designed from the ground up around how people actually reason.</p>
+            </div>
+            <a href="projects/hello-brain.html" class="card-link">View project</a>
+          </article>
+
+          <article class="project-card">
+            <span class="tag">Operations</span>
+            <div>
+              <h3>At Your Ledger</h3>
+              <p>Rebuilding a bookkeeping practice's operations so growth stopped depending on any one person's memory.</p>
+            </div>
+            <a href="projects/at-your-ledger.html" class="card-link">View project</a>
+          </article>
+
+          <article class="project-card">
+            <span class="tag">Systems Design</span>
+            <div>
+              <h3>AI Guides + Function Maps</h3>
+              <p>Turning scattered institutional knowledge into structured guides and maps that teams can actually navigate.</p>
+            </div>
+            <a href="projects/ai-guides.html" class="card-link">View project</a>
+          </article>
+
+          <article class="project-card">
+            <span class="tag">Product Launch</span>
+            <div>
+              <h3>Capaci</h3>
+              <p>Shaping a new product's early strategy so the first version earned trust instead of just attention.</p>
+            </div>
+            <a href="projects/capaci.html" class="card-link">View project</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ About ============ -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about-figure" aria-hidden="true"></div>
+        <div class="about-copy">
+          <h2>About Heather</h2>
+          <p>I'm Heather Hill, a digital product and strategy generalist who has spent twelve years moving between customer operations, engineering, team leadership, and product work. That path was not a plan. It turned out to be the point. It taught me to see the connections between the technical, operational, and human sides of a problem that most specialists only see one piece of.</p>
+          <p class="focus-line">Right now, I'm focused on product and operations strategy for small teams and founders who need someone who can think structurally and still get their hands dirty.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="cta">
+      <div class="container">
+        <h2>Let's connect.</h2>
+        <a href="https://www.linkedin.com/in/heatherhill/" class="btn" target="_blank" rel="noopener">Find me on LinkedIn</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span class="footer-brand">Heather Hill</span>
+      <a href="https://www.linkedin.com/in/heatherhill/" target="_blank" rel="noopener">LinkedIn</a>
+      <div class="footer-meta">&copy; <span id="year"></span> Heather Hill. heatherhill.co</div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
