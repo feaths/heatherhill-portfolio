@@ -78,7 +78,7 @@ button{font-family:inherit}
 .throughline .container{display:grid;grid-template-columns:1.3fr .7fr;gap:48px;align-items:end}
 .throughline-label{font-size:.82rem;letter-spacing:.18em;text-transform:uppercase;font-weight:700;color:var(--cream);opacity:.9;margin-bottom:1rem}
 .throughline-body h2{font-size:clamp(3.5rem,7vw,6.6rem);color:var(--cream);line-height:.93;max-width:9ch}
-.throughline-body h2 .accent{display:block;color:var(--pink);font-style:italic}
+.throughline-body h2 .accent{display:block;color:var(--pink);font-style:italic;white-space:nowrap}
 .throughline-body p{font-size:clamp(1rem,1.5vw,1.15rem);line-height:1.5;max-width:700px;margin-top:1.25rem;color:var(--cream)}
 .throughline-actions{display:flex;justify-content:flex-end;margin-top:0}
 .throughline-actions .btn{background:var(--gold);color:var(--espresso)}
